@@ -56,7 +56,7 @@ app.post('/scream', (req, res) => {
       res.status(500).json({
         error: "There was an error"
       });
-      console.log(err)
+      console.log(`Could not retrieve screams error: ${err}`)
     })
 });
 
